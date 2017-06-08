@@ -3,6 +3,17 @@ const flatten = require('../button')
 // const request = require('supertest');
 // const request = require('jasmine');
 // import jasmine from 'jasmine'
+var Jasmine = require('jasmine');
+var jasmine = new Jasmine();
+
+// jasmine.onComplete(function(passed) {
+//     if(passed) {
+//         console.log('All specs have passed');
+//     }
+//     else {
+//         console.log('At least one spec has failed');
+//     }
+// });
 
 
 
@@ -13,6 +24,16 @@ describe('flatten array will return a flat array with all null values removed', 
 
     expect(result1).toEqual([0, 'string', 2, 3, 'cake', 100, -2])
     expect(result2).toEqual([0, 2, 2, 3, 8, 100, -2, 44])
+
+    // result1.onComplete(function(passed) {
+    //     if(passed) {
+    //         console.log('All specs have passed');
+    //     }
+    //     else {
+    //         console.log('At least one spec has failed');
+    //     }
+    // });
+
 
   })
   //
